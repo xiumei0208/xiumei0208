@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>用户注册-珠江人寿保险商城</title>
+		<link rel="stylesheet" href="css/register.css" style="text/css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">        <!--引入图标-->
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/register.js"></script>
+	</head>
+	<body>
+		<div class="top">
+		</div>
+		<div class="header">
+			<div class="container">
+				<a href="http://wwww/prife.com.cn">
+					<img src="images/logo1.gif" alt="" />
+					<span>注册用户</span>
+				</a>
+			</div>
+			<div class="clearfix">
+			</div>
+			
+		</div>
+		<div class="content">
+			<div class="registform">
+				<form action="" method="post">
+					<ul>
+						<li>
+							<label for="" class="left">
+								<span>用户名</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user1"></i>
+								<input type="text" name="name" class="text" value autocomplete="off">
+								<span class="field-tips">
+									<i class="pics"></i>
+									6-20位字符组成，可由数字、字母组成
+								</span>
+								<div class="field-tips error-tips">
+									<label for="name" generated="generated" class="error">请输入一个长度介于6-20之间的字符串</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<label for="" class="left">
+								<span>登录密码</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user2"></i>
+								<input type="password" name="password" class="text" value autocomplete="off">
+								<span class="field-tips">
+									<i class="pics"></i>
+									6-20位字符组成，可由数字、字母或符号组成
+								</span>
+								<div class="field-tips error-tips">
+									<label for="password" generated="generated" class="error">请输入一个长度介于6-20之间的字符串</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<label for="" class="left">
+								<span>确认密码</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user2"></i>
+								<input type="password" name="password" class="text" value autocomplete="off">
+								<span class="field-tips">
+									<i class="pics"></i>
+									请再次输入密码
+								</span>
+								<div class="field-tips error-tips">
+									<label for="password" generated="generated" class="error">请再次输入相同的值</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<label for="" class="left">
+								<span>邮箱地址</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user3"></i>
+								<input type="text" name="email" id="email" class="text" value autocomplete="off">
+								<span class="field-tips">
+									<i class="pics"></i>
+									请输入常用邮箱
+								</span>
+								<div class="field-tips error-tips">
+									<label for="email" generated="generated" class="error">请输入正确格式的电子邮件</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<label for="" class="left">
+								<span>手机号码</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user4"></i>
+								<input type="text" name="mobile" id="mobile" class="text" value autocomplete="off">
+								<span class="field-tips">
+									<i class="pics"></i>
+									完成手机验证后，方便进行用户操作
+								</span>
+								<div class="field-tips error-tips">
+									<label for="mobile" generated="generated" class="error">手机号格式不正确</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<label for="" class="left">
+								<span>图片验证码</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user5"></i>
+								<input type="text" name="mobile" id="mobile" class="text vcode" placeholder="图片验证码" value autocomplete="off">
+								<span class="field-vcode">
+									<img src="images/cattcha.jpg" onclick="changeImage()" id="image1" alt="点击刷新验证码" />
+								</span>
+								<div class="field-tips error-tips">
+									<span class="field-tips error-tips">
+										<i class="pics1">
+										图片验证码错误，请重新输入
+										</i>
+									</span>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<label for="" class="left">
+								<span>手机验证码</span>
+								<i>*</i>
+							</label>
+							<div class="field-item">
+								<i class="pics ico-user4"></i>
+								<input type="text" name="smscode" id="smscode" class="text vcode" placeholder="短信验证码" value autocomplete="off">
+								<span class="field-vcode1">
+									<input type="button" title="获取短信验证码" class="test" id="msgAuth" value="获取验证码">
+								</span>
+								<div class="field-tips error-tips">
+									<label for="name" generated="generated" class="error">未填写，请补充</label>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<div class="field-item nolabel">
+								<input type="checkbox" class="checkbox" checked="cchecked" disabled="disabled" >
+								<span class="inline">
+									<a href="#" title="点击查看开通协议">同意珠江人寿会员注册开通协议</a>
+								</span>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<div class="field-item nolabel">
+								<input type="button" class="btn-submit" onclick="formSubmit()" value="注册">
+							</div>
+							<div class="clearfix"></div>
+						</li>
+					</ul>
+				</form>
+				<div class="clearfix"></div>
+			</div>
+			<div class="gologin">	
+				<h2>已是用户，请直接
+					<a href="#">登录</a>>
+				</h2>
+				<div class="slider">
+					<ul class="sliders">
+						<li>
+							<a href=""><img src="images/registpic1.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href=""><img src="images/registpic2.jpg" alt="" /></a>
+						</li>
+					</ul>
+					<ul class="slider-btn">
+						<li class="on"></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		
+		<!--脚部-->
+		<div class="footer">
+			<div class="container">
+				<div class="left">
+					<ul class="links">
+						<li><a href="#">关于珠江</a><span>|</span></li>
+						<li><a href="#">人才招聘</a><span>|</span></li>
+						<li><a href="#">联系我们</a><span>|</span></li>
+						<li><a href="#">法律声明</a><span>|</span></li>
+						<li><a href="#">友情链接</a></li>
+						<li class="tel">
+							<h2 class="hotline">
+							客服热线：
+							<b>4006-833-866</b>
+							</h2>
+						</li>
+					</ul>
+					<div class="contactinfo">
+						<span>公司地址：广州市天河区珠江新城珠江东路421号珠江投资大厦3-4楼</span>
+						&nbsp;&nbsp;
+						<span>邮编：510623</span>
+						&nbsp;&nbsp;
+						<span>电话：020-23389003</span>
+					</div>
+					<div class="copyright">
+						<span>(C)珠江人寿保险股份有限公司</span>			
+						<span>粤ICP备12079754号-1</span>	
+					</div>
+				</div>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</body>
+</html>
