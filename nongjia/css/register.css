@@ -1,0 +1,412 @@
+﻿*{
+	padding:0;
+	margin:0;
+	font-size:12px;
+	font-family:Microsoft YaHei,Arial, Helvetica, sans-serif;
+}
+.clearfix:after{
+	content:' ';
+	display:block;
+	width:100%;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+body{
+	background:#fcfcfc;
+}
+.top{
+	width:100%;
+	height:2px;
+	background:#EB5121;
+}
+.header{
+	width:100%;
+	height:95px;
+	position:relative;
+	padding-top:35px;
+}
+.header .container{
+	width:1200px;
+	margin:0 auto;
+}
+.header .container a{
+	display:block;
+	margin-top:20px;
+	float:left;
+}
+.header .container img{
+	width:183px;
+	height:48px;
+	vertical-align:middle;
+	display:inline;
+	border:none;
+	
+}
+.header .container span{
+	display:inline-block;
+	height:38px;
+	line-height:35px;
+	margin-top:4px;
+	margin-left:20px;
+	padding-left:20px;
+	font-size:18px;
+	vertical-align:middle;
+	color:#6c6c6c;
+	border-left:1px solid #6c6c6c;
+}
+.content{
+	width:1200px;
+	margin:0 auto;
+}
+.content .registform{
+	width:60%;
+	float:left;
+}
+.content .registform ul li{
+	display:block;
+	list-style:none;
+	padding:3px 0 15px 0;
+}
+.content .registform label{
+	position:relative;
+	width:120px;
+	padding-right:20px;
+	text-align:right;
+	text-align:right;
+}
+.content .registform .left{
+	float:left;
+	
+}
+.content .registform label span{
+	font-size:14px;
+	color:#5a5959;
+	line-height:34px;
+	position:relative;
+	
+}
+.content .registform label i{
+	display:inline-block;
+	font-size:20px;
+	color:#ff6a38;
+	top:7px;
+	right:2px;
+	padding-right:5px;
+	position:absolute;
+	letter-spacing:1px;
+	
+}
+.content .registform .field-item{
+	float:left;
+}
+.content .registform .field-item .pics{
+	background:#e7e6e6 url(../images/pics.png) no-repeat;
+}
+.content .registform .field-item .ico-user1{
+	background-position:-292px -40px;
+}
+.content .registform .field-item .ico-user2{
+	background-position:-292px -70px;
+}
+.content .registform .field-item .ico-user3{
+	background-position:-292px -160px;
+}
+.content .registform .field-item .ico-user4{
+	background-position:-292px -100px;
+}
+.content .registform .field-item .ico-user5{
+	background-position:-292px -190px;
+}
+.content .registform .field-item i{
+	display:inlient-block;
+	width:32px;
+	height:30px;
+	position:static;
+	float:left;
+	top:0;
+	left:0;
+	border:solid #ccc;
+	border-radius:3px 0 0 3px;
+	border-width:1px 0 1px 1px;
+}
+
+.content .registform .field-item .text{
+	display:inline-block;
+	width:220px;
+	height:30px;
+	padding-left:10px;
+	line-height:28px;
+	font-size:14px;
+	color:#5a5959;
+	border:1px solid #ccc;
+	border-radius:0 3px 3px 0;
+	outline:none;
+}
+.content .registform .field-item .vcode{
+	width:120px;
+	
+}
+.content .registform  .field-tips {
+	display:inline-block;
+	height:32px;
+	line-height:32px;
+	margin:1px 5px 0 5px;
+	padding-left:10px;
+	vertical-align:middle;
+	font-size:12px;
+	color:#888;
+}
+.content .registform .field-item  .field-tips i{
+	display:inlient-block;
+	float:left;
+	width:14px;
+	height:14px;
+	vertical-align:middle;
+	margin:9px 5px 0 5px;
+	border:0;
+	background-position:-155px -24px;
+	background-color:transparent;
+}
+
+/*label标签error的样式*/
+.content .registform .field-item .error-tips {
+	display:block;
+}
+.content .registform .field-item .error-tips label.error{
+	width:120px;
+	height:16px;
+	padding-left:16px;
+	padding-right:20px;
+	text-align:right;
+	font-weight:bold;
+	color:#d7340e;
+	background:url(../images/hong.jpg) no-repeat;
+	display:none;
+}
+
+/*图片验证码*/
+.content .registform .field-item .error-tips span.field-tips{
+	width:270px;
+	height:16px;
+	color:#d7340e;
+	
+}
+.content .registform .field-item .error-tips span.field-tips i.pics1{
+	width:267px;
+	height:16px;
+	line-height:16px;
+	padding-left:16px;
+	margin-left:-20px;
+	font-weight:bold;
+	font-style:normal;
+	text-align:left;
+	color:#d7340e;
+	background:url(../images/hong.jpg) no-repeat;
+	display:none;
+}
+/*手机短信验证码*/
+.content .registform .field-item .field-vcode{
+	display:inline-block;
+	position:relative;
+	width:88px;
+	height:34px;
+	padding-left:10px;
+	top:-10px;
+}
+.content .registform .field-item .field-vcode1 .test{
+	display:inline-block;
+	position:relative;
+	width:80px;
+	height:30px;
+	font-size:100%;
+	padding:0 10px;
+	margin-left:5px;
+	background:#f7cd8a;
+	cursor:pointer;
+	border:none;
+	border-radius:3px;
+}
+.content .registform .field-item .field-vcode img{
+	display:inline;
+	width:88px;
+	height:34px;
+	vertical-align:top;
+	border:none;
+	cursor:pointer;
+}
+
+
+
+
+.content .registform .nolabel{
+	padding-left:140px;
+}
+.content .registform .nolabel input.checkbox{
+	vertical-align:middle;
+}
+.content .registform .nolabel .inline{
+	display:inline-block;
+	height:32px;
+	line-height:32px;
+	padding-left:10px;
+	vertical-align:middle;
+	font-size:12px;
+}
+.content .registform .nolabel .inline a{
+	color:red;
+}
+.content .registform .nolabel input.btn-submit{
+	display:inline-block;
+	width:225px;
+	height:38px;
+	background:#ff9c00;
+	font-size:18px;
+	color:#fff;
+	line-height:36px;
+	letter-spacing:2px;
+	text-align:center;
+	border:0;
+	border-radius:3px;
+	cursor:pointer;
+}
+.content .gologin{
+	width:40%;
+	float:left;
+}
+.content .gologin h2{
+	display:block;
+	text-align:right;
+	font-size:16px;
+	font-weight:normal;
+	vertical-align:middle;
+	font-style:none;
+	color:#6c6c6c;
+	padding:40px;
+	margin:30px 0 0 20px;
+}
+.content .gologin h2 a{
+	font-size:16px;
+	color:#e84c3d;
+	text-decoration:none;
+}
+.content .gologin .slider {
+	display:block;
+	position:relative;
+	width:400px;
+	height:250px;
+	margin-left:40px;
+	overflow:hidden;
+	float:left;
+}
+.content .gologin .slider ul.sliders {
+	position:absolute;
+}
+.content .gologin .slider ul.sliders li{
+	list-style:none;
+	position:relative;
+	width:400px;
+	float:left;
+}
+.content .gologin .slider ul li img{
+	width:100%;
+}
+.content .gologin .slider .slider-btn {
+	display:block;
+	float:left;
+	position:absolute;
+	z-index:1002;
+	bottom:10px;
+	left:170px;
+}
+.content .gologin .slider .slider-btn li{
+	display:block;
+	width:30px;
+	height:4px;
+	margin-right:10px;
+	list-style:none;
+	float:left;
+	left:170px;
+	bottom:3px;
+	background:#fff;
+	cursor:pointer;
+}
+.content .gologin .slider .slider-btn .on{
+	background:#CDE25B;
+}
+
+
+
+
+.footer{
+	height: 186px;
+	min-width: 1200px;
+}
+.footer .container{
+	width:1200px;
+	margin:0 auto;
+	margin-top:20px;
+}
+.footer .container .left{
+	width:1200px;
+	margin:30px 30px 0 0;
+	float:left;
+	padding-bottom:100px;
+	text-align:center;
+	background-color:transparent;
+}
+.footer .container .left h2{
+	font-size:14px;
+	font-weight:normal;
+	font-style:none;
+	color:#6c6c6c;
+}
+.footer .container .left .hotline b{
+	margin-left:5px;
+	color:#d92826;
+	font-weight:normal;
+	font-size:14px;
+}
+.footer .container .left .links {
+	margin:20px 0;
+	height:40px;
+	padding-left:270px;
+}
+.footer .container .left .links li{
+	list-style-type:none;
+	float:left;
+	height:40px;
+	line-height:40px;
+}
+.footer .container .left .links li.tel{
+	margin-left:20px;
+}
+.footer .container .left .links li a{
+	text-decoration:none;
+	width:95px;
+	height:14px;
+	line-height:14px;
+	font-size:14px;
+	color:#000;
+}
+.footer .container .left .links li a:hover{
+	color:#d92826;
+}
+.footer .container .left .links li span{
+	margin:0 20px;
+}
+.footer .container .left .links .end{
+	margin-left:20px;
+	margin-top:-8px;
+}
+.footer .container .left .contactinfo{
+	font-size:12px;
+	line-height:22px;
+	color:#6c6c6c;
+	
+}
+.footer .container .left .copyright{
+	font-size:12px;
+	color:#6c6c6c;
+	
+}
