@@ -64,7 +64,7 @@ $().ready(function() {
 
 //表单验证：提示
 jQuery.extend(jQuery.validator.messages, {  
-  required: "必选字段",  
+  required: "未填写，请补充",  
   remote: "请修正该字段",  
   email: "请输入正确格式的电子邮件",  
   url: "请输入合法的网址",  
@@ -118,42 +118,56 @@ function showAuto(){
 
 
 //动画轮播
-		var sliderWidth = 400,
-            ulLeft = 0,
-            ulWidth = $(".slider ul.sliders").width(),
-            liIndex = 0;
-		var t =n=0,count;
-			
-        $(function () {
-			count=$(".sliders>li>a").length;
-            $(".slider,.slider .sliders>li").width(sliderWidth);
-            $(".slider>ul.sliders").width($(".slider .sliders>li").length * sliderWidth); 
-            $(this).eq(n).addClass("on");
+var sliderWidth = 400,
+	ulLeft = 0,
+	ulWidth = $(".slider ul.sliders").width(),
+	liIndex = 0;
+var t =n=0,count;
+	
+$(function () {
+	count=$(".sliders>li>a").length;
+	$(".slider,.slider .sliders>li").width(sliderWidth);
+	$(".slider>ul.sliders").width($(".slider .sliders>li").length * sliderWidth); 
+	$(this).eq(n).addClass("on");
+
+	setInterval(slide, 3000);   //自动播放
+	$(".slider-btn li").click(function () {        //点击按钮轮播
+		var j=$(this).index();   //获取li元素的索引
+		n=j;
+		if(j>=count)return;
 		
-            setInterval(slide, 3000);   //自动播放
-            $(".slider-btn li").click(function () {        //点击按钮轮播
-				var j=$(this).index();   //获取li元素的索引
-				n=j;
-				if(j>=count)return;
-                
-				ulLeft = $(".slider ul.sliders>li").width()*j;
-				$(".slider ul.sliders").animate({ left: -ulLeft }, 300);
-                $(".slider .slider-btn>li").removeClass("on");
-                $(".slider .slider-btn>li").eq(j).addClass("on");
-            });
-            
-        });
-		function slide() {            //下一张函数
-			n=n;
-            if (n<count) {
-                ulLeft = $(".slider ul.sliders>li").width()*n;
-                $(".slider ul.sliders").animate({ left: -ulLeft }, 300);
-				$(".slider .slider-btn>li").removeClass("on");
-				$(".slider .slider-btn>li").eq(n).addClass("on");
-				n+=1;
-			} 
-			else {
-				n=0;
-			}
-        }
-        
+		ulLeft = $(".slider ul.sliders>li").width()*j;
+		$(".slider ul.sliders").animate({ left: -ulLeft }, 300);
+		$(".slider .slider-btn>li").removeClass("on");
+		$(".slider .slider-btn>li").eq(j).addClass("on");
+	});
+	
+});
+function slide() {            //下一张函数
+	n=n;
+	if (n<count) {
+		ulLeft = $(".slider ul.sliders>li").width()*n;
+		$(".slider ul.sliders").animate({ left: -ulLeft }, 300);
+		$(".slider .slider-btn>li").removeClass("on");
+		$(".slider .slider-btn>li").eq(n).addClass("on");
+		n+=1;
+	} 
+	else {
+		n=0;
+	}
+}
+
+//注册
+function formSubmit() {
+	
+	var validator = $("#singleForm").validate().form();
+	if (validator) {
+		if (checkyzm($("#yzm").val())){
+			$("#singleForm").submit();
+		} else {
+			$("#span1").html("<i class='pics1'></i>图片验证码错误，请重新输入");
+			changeImage();
+			$('#span1').show();
+		}
+	}
+};

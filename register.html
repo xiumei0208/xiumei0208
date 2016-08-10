@@ -25,7 +25,7 @@
 		</div>
 		<div class="content">
 			<div class="registform">
-				<form id="signupForm" action="" method="post">
+				<form id="singleForm" action="" method="post">
 					<ul>
 						<li>
 							<label for="" class="left">
@@ -124,12 +124,12 @@
 							</label>
 							<div class="field-item">
 								<i class="pics ico-user5"></i>
-								<input type="text" name="yzm" id="yzm" class="text vcode" placeholder="图片验证码" value autocomplete="off">
+								<input size="4" type="text" name="yzm" id="yzm" class="text vcode" placeholder="图片验证码" value autocomplete="off">
 								<span class="field-vcode">
 									<img src="images/cattcha.jpg" onclick="changeImage()" id="image1" alt="点击刷新验证码" />
 								</span>
-								<div class="field-tips error-tips">
-									<span class="field-tips error-tips">
+								<div class="field-tips error-tips" style="display:block;height:12px;">
+									<span class="field-tips error-tips" style="display:none;font-weight:bold;color:#d7340e;" id="span1">
 										<i class="pics1">
 										图片验证码错误，请重新输入
 										</i>
