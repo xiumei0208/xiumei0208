@@ -1,0 +1,86 @@
+﻿/* 
+ * CreateBy: wywar
+ * CreateTime: 2016-6-27
+ * Email: zhouweihua@biyabi.com
+ * ip变现首页-页面样式
+ */
+
+/*  */
+.section-box
+{
+    margin-bottom:55px;
+}
+.petty-box{
+    padding-right:167px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.petty-box:last-of-type{
+    border-bottom:none;
+}
+.petty-box .row{
+    border-bottom:none;
+}
+.shop-box
+{
+    margin-top:60px;
+}
+.shop-box .row .row-item:first-of-type
+{
+    margin:0 0 40px;
+}
+.row{
+    padding:0 0 10px;
+    font-size:14px;
+    border-bottom:1px solid #f2f2f2;
+}
+.row .row-item{
+    margin:13px 0;
+    line-height:30px;
+}
+.row .row-item h4,
+.row .row-item h5{
+    width:80px;
+    margin-right:26px;
+}
+.row .row-item h5{
+    font-weight:400;
+    text-align:right;
+}
+textarea{
+    width:641px;
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+    resize:none;
+}
+.row .row-item .img-box{
+    display:block;
+    display:table-cell;
+    width:140px;
+    height:140px;
+    text-align:center;
+    vertical-align:middle;
+    border:1px solid #e5e5e4;
+}
+.row .row-item img{
+    display:inline-block;
+    width:auto;
+    max-width:100%;
+    max-height:100%;
+}
+.row .row-item .btn{
+    width:150px;
+    height:30px;
+    line-height:14px;
+    text-align:center;
+}
+.row .row-item .input-link{
+    height:30px;
+    width:540px;
+    font-size:14px;
+}
+.btn-copy{
+    background:#fbfbfb;
+    color:#999899;
+    border:1px solid #e5e4e4;
+}
+/*  end */

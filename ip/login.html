@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>登录-ip变现平台</title>
+
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <style>
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo-login">
+            <img src="images/logo_login.png" />
+        </div>
+        <div class="login-box">
+            <form class="form-login" action="/" method="post">
+                <h1>信息管理系统登录</h1>
+                <div class="form-item">
+                    <label>
+                        <span>用户名</span>
+                    <input id="name" type="text" name="name" value="" />
+                    </label>
+                    <p class="error-info error-name">请输入用户名</p>
+                </div>
+                <div class="form-item">
+                    <label>
+                        <span>密&nbsp;&nbsp;&nbsp;码</span>
+                    <input id="password" type="password" name="password" value="" />
+                    </label>
+                    <p class="error-info error-password">请输入密码</p>
+                </div>
+                <div class="form-item clearfix remenber">
+                    <label class="has-checkbox">
+                        <input type="checkbox" name="remenber" value="" /><span>记住登录状态</span>
+                    </label>
+                    <a class="pull-right" href="#">忘记密码？</a>
+                </div>
+                <div class="form-item">
+                    <input class="btn-login" type="submit" value="登录" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        $(function () {
+            $(document).on("submit", ".form-login", function () {
+                return checkLogin();
+            });
+            function checkLogin() {
+                if ($("#name").val() == "") {
+                    $(".error-name").show();
+                    return false;
+                }
+                if ($("#password").val() == "") {
+                    $(".error-password").show();
+                    return false;
+                }
+            }
+
+            $(document).on("focus", "#name,#password", function () {
+                $(".error-info").hide();
+            });
+        });
+    </script>
+</body>
+</html>

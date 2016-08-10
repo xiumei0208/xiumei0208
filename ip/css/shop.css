@@ -1,0 +1,71 @@
+﻿/* 
+ * CreateBy: wywar
+ * CreateTime: 2016-6-27
+ * Email: zhouweihua@biyabi.com
+ * ip变现店铺管理-页面样式
+ */
+
+/*  */
+.section-box{
+    padding:14px;
+}
+.info-box{
+    position:relative;
+    padding:66px 38px 14px;
+    line-height:20px;
+}
+.info-box p{
+    font-size:14px;
+    line-height:26px;
+    color:#999899;
+}
+.info-box h5{
+    line-height:26px;
+}
+.shop-top{
+    position:absolute;
+    left:50%;
+    top:0;
+    margin-left:-240px
+}
+.shop-top a{
+    float:left;
+    position:relative;
+    display:inline-block;
+    padding:10px 48px;
+    font-size:16px;
+    line-height:20px;
+}
+.shop-top a img{
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin:0 0 -5px -14px;
+}
+.shop-top a.active{
+    padding:14px 48px;
+}
+.shop-top a.active img{
+    display:block;
+}
+/*搜索结果列表*/
+.goods-list>li{
+    width:472px;
+    margin-right:18px;
+    border:1px solid #f5f5f5;
+}
+.goods-list>li:nth-child(2n) {
+    margin-right: 0;
+}
+.goods-list>li > div.right {
+    width: 315px;
+}
+.goods-list>li>div:first-of-type{
+    margin-right:15px;
+}
+.goods-list-box a{
+    color:#ea5255;
+}
+
+/*  end */
